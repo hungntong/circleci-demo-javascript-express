@@ -29,6 +29,7 @@ jobs:
       - image: circleci/node:10.16.3
     steps:
       - checkout
+      - run: npm i
       - restore_cache:
           keys:
             - "npm-packages"
